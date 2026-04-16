@@ -6,7 +6,7 @@
     <div class="card shadow-sm border-0 mb-4">
         <div class="card-body py-4">
             <h5 class="fw-bold text-dark mb-1">Edit Account Forms</h5>
-            <small class="text-muted mb-4 d-block">Please <span class="text-danger">.fill-all</span> input form with right value.</small>
+            <small class="text-muted mb-4 d-block">Input the right data.</small>
 
             @if(session('success'))
                 <div class="alert alert-success text-success bg-light border-success opacity-75 mb-4" style="background-color: #d1e7dd !important;">

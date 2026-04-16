@@ -30,7 +30,7 @@
 
             <div class="mb-3">
                 <label class="form-label">Keterangan / Deskripsi</label>
-                <textarea name="description" class="form-control" rows="3" placeholder="Contoh: Kondisi baru, diletakkan di lab rpl"></textarea>
+                <textarea name="description" class="form-control" rows="3" ></textarea>
             </div>
 
             <div class="mt-4">

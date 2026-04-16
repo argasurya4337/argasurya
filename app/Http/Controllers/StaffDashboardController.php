@@ -12,15 +12,15 @@ class StaffDashboardController extends Controller
     {
 
 $activeLendings = 0;
-    $lateReturns = 0;
+    // $lateReturns = 0;
     $totalStaff = 0;
     $totalItems = 0;
     
     // Logika untuk Staff
     $activeLendings = Lending::where('status', 'borrowed')->count();
-    $lateReturns = Lending::where('status', 'borrowed')
-                    ->where('due_date', '<', now())
-                    ->count();
+    // $lateReturns = Lending::where('status', 'borrowed')
+    //                 ->where('due_date', '<', now())
+    //                 ->count();
 
     // Logika untuk Admin (Tambahan biar lengkap)
     $totalStaff = User::where('role', 'staff')->count();
@@ -29,7 +29,7 @@ $activeLendings = 0;
     // Kirim semua variabel ke view menggunakan compact
     return view('staff.dashboard', compact(
         'activeLendings', 
-        'lateReturns', 
+        // 'lateReturns',
         'totalStaff', 
         'totalItems'
     ));
